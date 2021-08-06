@@ -44,7 +44,7 @@ except ImportError:
 DEFAULT_POOL_TIMEOUT = None
 
 
-def send(self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None):
+def send_request(self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None):
     """Sends PreparedRequest object. Returns Response object.
 
     :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
